@@ -3,7 +3,7 @@
 Render.com 部署入口文件
 """
 import os
-from paper_web_ui_simple import app, db_manager
+from paper_web_ui import app, db_manager
 
 # 确保数据库初始化
 if not os.path.exists('papers.db'):
