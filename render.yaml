@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: paper-database
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT app:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
