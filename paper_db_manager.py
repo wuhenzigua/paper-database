@@ -11,6 +11,7 @@ import pathlib
 import re
 from datetime import datetime
 import json
+import os
 
 class PaperDatabaseManager:
     def __init__(self, db_path="papers.db"):
@@ -210,6 +211,9 @@ class PaperDatabaseManager:
         cursor.execute("SELECT COUNT(*) FROM papers WHERE download_status = 'downloaded'")
         stats['downloaded'] = cursor.fetchone()[0]
         
+        cursor.execute("SELECT COUNT(*) FROM papers WHERE download_status = 'available'")
+        stats['available'] = cursor.fetchone()[0]
+        
         cursor.execute("SELECT COUNT(*) FROM papers WHERE download_status = 'failed'")
         stats['failed'] = cursor.fetchone()[0]
         
@@ -339,6 +343,12 @@ class PaperDatabaseManager:
         if not file_path:
             return 'no_url'
         
+        # 检查是否在部署环境（没有实际PDF文件）
+        if os.environ.get('RENDER') or os.environ.get('PORT'):
+            # 在部署环境中，如果有文件路径就认为是可下载的
+            return 'available'
+        
+        # 本地环境检查实际文件
         path = pathlib.Path(file_path)
         if path.exists() and path.stat().st_size > 1000:
             return 'downloaded'

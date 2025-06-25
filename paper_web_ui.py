@@ -42,6 +42,7 @@ HTML_TEMPLATE = """
         .status-downloaded { background: #d4edda; color: #155724; }
         .status-failed { background: #f8d7da; color: #721c24; }
         .status-unknown { background: #d1ecf1; color: #0c5460; }
+        .status-available { background: #fff3cd; color: #856404; }
         .pagination { text-align: center; margin-top: 20px; }
         .pagination a { display: inline-block; padding: 8px 16px; margin: 0 4px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; }
         .pagination a:hover { background: #0056b3; }
@@ -74,6 +75,10 @@ HTML_TEMPLATE = """
                 <div class="stat-card" style="background: #28a745;">
                     <h3>{{ stats.downloaded }}</h3>
                     <p>已下载</p>
+                </div>
+                <div class="stat-card" style="background: #ffc107; color: #333;">
+                    <h3>{{ stats.get('available', 0) }}</h3>
+                    <p>可下载</p>
                 </div>
                 <div class="stat-card" style="background: #dc3545;">
                     <h3>{{ stats.failed }}</h3>
@@ -134,6 +139,7 @@ HTML_TEMPLATE = """
                 <div class="paper-item">
                     <div class="paper-status status-{{ paper[8] }}">
                         {% if paper[8] == 'downloaded' %}✅ 已下载
+                        {% elif paper[8] == 'available' %}📎 可下载
                         {% elif paper[8] == 'failed' %}❌ 失败
                         {% else %}⏳ 未知{% endif %}
                     </div>
