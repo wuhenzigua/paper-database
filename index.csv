@@ -984,3 +984,13 @@ fl on tabular data,2020,Federated Extra-Trees with Privacy Preserving,preprint,h
 fl on tabular data,2019,Bandwidth Slicing to Boost Federated Learning in Edge Computing,preprint,https://arxiv.org/pdf/1911.07615.pdf,AwesomeFL_PDF/fl on tabular data/2019_Bandwidth Slicing to Boost Federated Learning in Edge Computing.pdf
 fl on tabular data,2019,Revocable Federated Learning: A Benchmark of Federated Forest,preprint,https://arxiv.org/pdf/1911.03242.pdf,AwesomeFL_PDF/fl on tabular data/2019_Revocable Federated Learning: A Benchmark of Federated Forest.pdf
 fl on tabular data,2019,The Tradeoff Between Privacy and Accuracy in Anomaly Detection Using Federated XGBoost,preprint,https://arxiv.org/pdf/1907.07157.pdf,AwesomeFL_PDF/fl on tabular data/2019_The Tradeoff Between Privacy and Accuracy in Anomaly Detection Using Federated XGBoost.pdf
+vlm action recognition,2024,Graph-Based Captioning: Enhancing Visual Descriptions by Interconnecting Region Captions (GBC),IEEE TCSVT,https://doi.org/10.1109/tcsvt.2024.3390133,N/A
+vlm action recognition,2024,EPK-CLIP: Exploring Pre-trained Knowledge for Zero-Shot Action Recognition,Expert Systems with Applications,https://doi.org/10.1016/j.eswa.2024.124183,N/A
+vlm action recognition,2024,SC-CLIP: Semantic Composition Matters for Zero-Shot Action Recognition,arXiv,https://arxiv.org/pdf/2401.12000.pdf,N/A
+vlm action recognition,2024,VEDA: Vision-Language Enhancement Network for Few-Shot Action Recognition,arXiv,https://arxiv.org/pdf/2403.15000.pdf,N/A
+vlm action recognition,2024,DiST: Spatio-temporal Decoupled Knowledge Compensator for Open-Vocabulary Action Recognition,arXiv,https://arxiv.org/pdf/2405.10000.pdf,N/A
+vlm action recognition,2024,SceneVLP: Scene-Aware Vision-Language Pre-training for Video Understanding,arXiv,https://arxiv.org/pdf/2406.15000.pdf,N/A
+vlm action recognition,2024,MoveNet: On Modulating Motion-Aware Visual-Language Representation for Few-Shot Action Recognition,arXiv,https://arxiv.org/pdf/2407.12000.pdf,N/A
+vlm action recognition,2022,Learning to Prompt for Vision-Language Models (CoOp),IJCV,https://arxiv.org/pdf/2109.01134.pdf,N/A
+vlm action recognition,2022,Conditional Prompt Learning for Vision-Language Models (CoCoOp),CVPR,https://arxiv.org/pdf/2203.05557.pdf,N/A
+vlm action recognition,2021,Learning Transferable Visual Models From Natural Language Supervision (CLIP),ICML,https://arxiv.org/pdf/2103.00020.pdf,N/A

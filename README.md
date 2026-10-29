@@ -28,6 +28,11 @@ python app.py
 
 基于 Awesome-FL 项目的联邦学习论文库数据。
 
+**最新扩展 Latest Expansion:**
+- 新增 **视觉-语言模型（VLM）动作识别** 领域论文（2021-2026）
+- 包含 CLIP、CoOp、CoCoOp 及其在动作识别中的应用研究
+- 查看综合分析文档：[VLM 动作识别技术综述](./VLM_Action_Recognition_Synthesis.md)
+
 ## 🛠️ 技术栈
 
 - **后端**: Flask, SQLite, pandas
